@@ -1,0 +1,293 @@
+/* screens having width more than 800px esp. tvs and computers */
+@media only screen and (min-width: 800px) {
+    .game{
+        margin-top: 50px;
+        margin-bottom: 70px;
+        max-width: 60%!important;
+        max-height: 150px!important;
+        height: 130px!important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .game img{
+        top: 20px !important;
+        left: 20px;
+    }
+    .game_right{
+        left: 39%!important;
+    }
+    .desc{
+        font-size: 15px!important;
+        max-height: 33px!important;
+    }
+    .ga_after{
+        inset:5px!important;
+    }
+    .intro{
+        margin-top: 40px;
+        width: 60%!important;
+        left: 40%!important;
+    }
+    .title{
+        width: 99% !important;
+        height: 100px;
+    }
+    .title p{
+        padding-top: 5px;
+        font-size: 55px;
+    }
+    #download{
+        bottom: 45px !important;
+    }
+    #Down_No{
+        bottom: 65px!important;
+    }
+    .no_hov{
+        bottom: 60px !important;
+    }
+    .options_info{
+        right: 20px !important;
+    }
+    .end_desc{
+        font-size: 20px !important;
+    }
+    .more{
+        left: 350px;
+    }
+    #content{
+        width: 30%;
+    }
+    #mode{
+        left: 15%;
+    }
+    #dot{
+        left: 15%;
+    }
+    #download_ui{
+        left: 35%;
+    }
+    .insta{
+        left: 40%;
+        }
+    .twit{
+        left: 45%;
+        }
+    .yt{
+        left: 50%;
+        }
+}
+
+/* screens below 550px of width */
+@media only screen and (max-width: 550px){
+    #download_ui{
+        left: 10%;
+    }
+    .insta{
+        left: 30%;
+        }
+    .twit{
+        left: 40%;
+        }
+    .yt{
+        left: 50%;
+        }
+}
+
+/* screens having width less than 450px esp. nomral mobile phones */
+@media only screen and (max-width: 450px){
+    .title{
+        font-size: 25px;
+        height: 50px;
+    }
+    .intro p{
+        max-width: 250px;
+    }
+    .desc{
+        max-width: 150px;
+    }
+    .game{
+        width: 80%;
+        height: 125px;
+    }
+    .game_right{
+        left: 20%;
+    }
+    #Down_No:hover~.no_hov{
+        animation: down_no_1 1s forwards;
+    }
+    .no_hov:hover{
+        animation: down_no_1 1s forwards;
+    }
+    #Down_No{
+        left: 220px;
+        max-width: 50px;
+    }
+    .options{
+        left: 88%;
+    }
+    .more{
+        left: 250px;
+    }
+    #download_ui{
+        left: 10px;
+        width: 95%;
+    }
+    #yes{
+        right: 30%
+    }
+    #no{
+        left: 10%;
+    }
+    #content{
+        width: 70%;
+    }
+    .search{
+        max-width: 40%;
+    }
+    .search_2{
+        max-width: 40%;
+        overflow: hidden;
+    }
+}
+
+/* screens having width less than 360px */
+@media only screen and (max-width: 360px){
+    .game{
+        width: 95%;
+    }
+    .game_right{
+        left: 5%;
+    }
+    #download_ui{
+        left: 5px;
+    }
+    #yes{
+        right: 10px;
+    }
+    #no{
+        left: 0px;
+    }
+}
+
+/* animation for the title color */
+@keyframes title {
+    0%{color: var(--white_gray);
+        text-shadow: var(--shadow) var(--white_gray);}
+    25%{color:rgba(230, 136, 14, 0.995);
+        text-shadow: var(--shadow) rgba(230, 136, 14, 0.995);}
+    50%{color:rgba(15, 192, 135, 0.603);
+        text-shadow: var(--shadow) rgba(15, 192, 135, 0.603);}
+    75%{color: rgba(48, 120, 6, 0.603);
+        text-shadow: var(--shadow) rgba(48, 120, 6, 0.603);}
+    100%{color: var(--white_gray);
+        text-shadow: var(--shadow) var(--white_gray);}
+}
+
+/* animation for the download button's border */
+@keyframes download {
+    0%{border-color: black;}
+    25%{border-color: rgb(177, 39, 39);}
+    50%{border-color: rgb(52, 152, 22);}
+    75%{border-color: rgb(18, 162, 143);}
+    100%{border-color: black;}
+}
+
+@keyframes down_no {
+    0%{opacity: 0;
+        bottom: 80px;
+        left: 230px;
+        cursor: pointer;
+        font-size: 8px;}
+    100%{opacity: 1;
+        bottom: 70px;
+        left: 220px;
+        cursor: pointer;
+        font-size: 13px;
+        visibility: visible;}
+}
+
+@keyframes down_no_1 {
+    0%{opacity: 0;
+        bottom: 80px;
+        left: 230px;
+        cursor: pointer;
+        font-size: 8px;}
+    100%{opacity: 1;
+        bottom: 66px;
+        left: 200px;
+        cursor: pointer;
+        font-size: 12px;
+        visibility: visible;}
+}
+
+@keyframes game_border {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+@keyframes blue_shade {
+    0%{color:#00000000}
+    100%{color: #213b69;
+        background-color: #2196f3;
+        box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;}
+}
+
+@keyframes down_hov {
+    0%{opacity:0; visibility: hidden; font-size: 10px;top:0px;}
+    100%{opacity:1; visibility: visible; font-size: 10px; top: 5px;}
+}
+
+@keyframes line1 {
+    0%{background-color: var(--white)}
+    100%{background-color: rgba(28, 159, 207, 0.603); transform: rotate3d(0,1,0,180deg);}
+}
+
+@keyframes line2 {
+    0%{background-color: var(--white)}
+    100%{background-color: rgba(20, 133, 219, 0.603); transform: rotate3d(10,30,32,60deg);}
+}
+
+@keyframes line3 {
+    0%{background-color: var(--white)}
+    100%{background-color: rgba(15, 183, 192, 0.603); transform: rotate3d(10,30,32,60deg);}
+}
+
+@keyframes more {
+    0%{letter-spacing: 4px;}
+    100%{letter-spacing: 0px;}
+}
+
+@keyframes mode {
+    0%{background-color: white;}    
+    100%{background-color: rgb(36, 241, 0);}    
+}
+
+/* reverse mode animation */
+@keyframes mode1 {
+    0%{background-color: rgb(36, 241, 0);}    
+    100%{background-color: white;}    
+}
+
+@keyframes dot {
+    0%{background-color:rgba(160, 160, 160, 0.603);}
+    100%{background-color: rgb(241, 229, 0);
+    margin-left: 25px;}
+}
+
+/* reverse dot animation */
+@keyframes dot1 {
+    0%{background-color: rgb(241, 229, 0);
+        margin-left: 25px;}
+    100%{background-color:rgba(160, 160, 160, 0.603);}
+}
+
+@keyframes content {
+    0%{width: 10%;}
+    100%{visibility: visible ;opacity: 1;}
+}
+
+/* reverse content */
+@keyframes content1 {
+    0%{visibility: visible ;opacity: 1;}
+    100%{width: 10%;}
+}
