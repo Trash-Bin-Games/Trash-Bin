@@ -7,7 +7,7 @@ let options = document.getElementById("options");
 
 // user defined variables
 var Billion = "";
-var no_of_clicks = 0;
+var no_of_clicks = parseFloat(localStorage.getItem("no_of_downloads"));
 var add = 1
 
 // hovering over no button to affect yes button
@@ -42,10 +42,11 @@ const clicked = () => {
 
     // and finally updating the numbers
 
-    localStorage.setItem("no_of_downloads", parseFloat(no_of_clicks).toFixed(2));
+    localStorage.setItem("no_of_downloads", no_of_clicks);
     
-    // no_of_clicks = parseFloat(localStorage.getItem("no_of_downloads"));
-    // localStorage.setItem("no_of_downloads", num0);
+    no_of_clicks = parseFloat(localStorage.getItem("no_of_downloads"));
+    // localStorage.setItem("no_of_downloads", no_of_clicks);
+
     var final_down = parseFloat(localStorage.getItem("no_of_downloads")).toFixed(2) + Billion;
     localStorage.setItem("no_of_downloads", final_down);
 
